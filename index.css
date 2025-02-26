@@ -1,28 +1,64 @@
+html{
+    border-radius: 100px;
+
+}
+h1{
+    font-size: 35px;
+    text-align: left;
+    -webkit-text-stroke: black 0.5px;
+    background-color: rgb(130, 5, 239);
+}
+#heading{
+    height: fit-content;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(130, 5, 239);
+    padding-bottom: 10px;
+}
 body {
+    color: white;
     margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-weight: 200;
     min-width: 400px;
+ 
 }
 
 input {
+    font-family: "Atkinson Hyperlegible Mono", serif;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
     margin-bottom: 4px;
+    backdrop-filter: blur(10px);
+    border-color:rgb(130, 5, 239) ;
+    border-radius: 10px;
+    border-width: 2px;
 }
-
+#container{
+    background-color: white;
+    padding: 10px 20px ;
+}
 button {
-    background: #5f9341;
-    color: white;
+    flex: auto;
     padding: 10px 20px;
-    border: 1px solid #5f9341;
     font-weight: bold;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-size: 15px;
+
+
+}
+#input-btn{
+    background-color: white;
+    color: rgb(3, 42, 3);
 }
 #dlt-btn{
     background-color: white;
-    color: #5f9341;
+    color: red;
 }
 
 ul {
@@ -36,5 +72,5 @@ li {
 }
 
 a {
-    color: #5f9341;
+    color: #080a08;
 }
