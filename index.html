@@ -1,23 +1,41 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@200..800&family=Trade+Winds&display=swap" rel="stylesheet">
-        <title>Link Folder</title>
-    </head>
-    <body>
-        <div id="heading"><h1>Link Folder</h1><input type="text" id="input-el" placeholder="enter your text here...">
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@200..800&family=Trade+Winds&display=swap" rel="stylesheet">
+    <title>Link Folder</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Link Folder</h1>
+      <input type="text" id="input-el" placeholder="enter your text here...">
+    </div>
+    <div id="action-section">
+      <button id="save-text-btn">Save Text</button>
+      <div id="folder-save-section" class="hidden">
+        <button id="input-btn">Save to Folder</button>
+        <select name="folder-select" id="folder-select">
+          <option value="none">Select Folder</option>
+        </select>
+      </div>
+      <button id="folder-toggle">Save to Folder</button>
+      <button id="tab-btn">SAVE TAB</button>
+      <button id="dlt-btn">DELETE</button>
+    </div>
+
+    <div id="container">
+        <button id="new-folder-toggle">New Folder</button>
+        <div id="folder-section" class="hidden">
+          <input type="text" id="folder-name" placeholder="New Folder Name">
+          <button id="create-folder-btn">Create Folder</button>
         </div>
-        
-        <div id="container">
-            <button id="input-btn">SAVE INPUT</button>
-            <button id="tab-btn">SAVE TAB</button>
-            <button id="dlt-btn">DELETE</button>
-    
-            <ul id="ul-el">
-            </ul>
-            <script src="index.js"></script>
-        </div>
-    </body>
+      
+      
+      <div id="content-section">
+        <div id="ul-el"></div>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
 </html>
